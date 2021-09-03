@@ -174,7 +174,7 @@ void transfer(Akun akun, List list_akun) {
   var id_akun_tujuan = int.parse(stdin.readLineSync());
   //kondisi akun yang dipilih
   if (id_akun_tujuan == akun.getId() ||
-      id_akun_tujuan <= 0 ||
+      id_akun_tujuan < 0 ||
       id_akun_tujuan >= list_akun.length) {
     print("Akun tidak ditemukan.\n");
   } else {
