@@ -6,7 +6,10 @@ import 'dart:io';
 main(List<String> args) {
   //buat akun
   var list_akun = [];
-  list_akun = buat_akun();
+  //list_akun = buat_akun();
+  list_akun.add(Akun(0, "Wahyu", 500000));
+  list_akun.add(Akun(1, "Spongebob", 10000));
+  list_akun.add(Akun(2, "Sendi", 20000));
 
   //perulangan program
   loop_program:
